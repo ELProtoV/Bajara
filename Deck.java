@@ -36,7 +36,7 @@ public class Deck {
     public void head() {
         if (!cards.isEmpty()) {
             Card card = cards.remove(0);
-            System.out.println(card.getSuit() + "," + card.getColor() + "," + card.getValue());
+            System.out.println("Carta mostrada: " + card.getSuit() + "," + card.getColor() + "," + card.getValue());
             System.out.println("Quedan " + cards.size() + " cartas en deck");
         } else {
             System.out.println("No hay cartas en el deck.");
@@ -48,7 +48,7 @@ public class Deck {
         if (!cards.isEmpty()) {
             int randomIndex = (int) (Math.random() * cards.size());
             Card card = cards.remove(randomIndex);
-            System.out.println(card.getSuit() + "," + card.getColor() + "," + card.getValue());
+            System.out.println("Carta seleccionada al azar: " + card.getSuit() + "," + card.getColor() + "," + card.getValue());
             System.out.println("Quedan " + cards.size() + " cartas en deck");
         } else {
             System.out.println("No hay cartas en el deck.");
@@ -58,6 +58,7 @@ public class Deck {
     // Método para obtener una mano de cinco cartas del Deck
     public void hand() {
         if (cards.size() >= 5) {
+            System.out.println("Mano de cinco cartas:");
             for (int i = 0; i < 5; i++) {
                 Card card = cards.remove(0);
                 System.out.println(card.getSuit() + "," + card.getColor() + "," + card.getValue());
@@ -66,5 +67,21 @@ public class Deck {
         } else {
             System.out.println("No hay suficientes cartas en el deck para repartir una mano.");
         }
+    }
+
+    // Método main para ejecutar el programa
+    public static void main(String[] args) {
+        Deck deck = new Deck();
+        // Mezclar el mazo al inicio
+        deck.shuffle();
+        
+        // Ejemplo: Mostrar la primera carta
+        deck.head();
+        
+        // Ejemplo: Seleccionar una carta al azar
+        deck.pick();
+        
+        // Ejemplo: Repartir una mano de cinco cartas
+        deck.hand();
     }
 }
