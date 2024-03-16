@@ -1,5 +1,5 @@
-# Bajara
-# Proyecto: Deck of Cards
+# Baraja
+# Proyecto: Baraja
 
 Este proyecto consiste en la implementación de un programa en Java para representar un mazo de cartas de póker y realizar operaciones como mezclar el mazo, mostrar cartas, seleccionar cartas al azar y repartir manos de cartas.
 
