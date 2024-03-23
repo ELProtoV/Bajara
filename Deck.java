@@ -1,9 +1,10 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Scanner;
 
 public class Deck {
-    private List<Card> cards; // Usaremos ArrayList para almacenar las cartas
+    private List<Card> cards;
 
     // Constructor
     public Deck() {
@@ -69,19 +70,48 @@ public class Deck {
         }
     }
 
+    // Método para mostrar el menú interactivo y obtener la opción seleccionada
+    public int showMenu() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bienvenido a Poker!");
+        System.out.println("Selecciona una opción:");
+        System.out.println("1 Mezclar deck");
+        System.out.println("2 Sacar una carta");
+        System.out.println("3 Carta al azar");
+        System.out.println("4 Generar una mano de 5 cartas");
+        System.out.println("0 Salir");
+        System.out.print("Opción: ");
+        int option = scanner.nextInt();
+        return option;
+    }
+
     // Método main para ejecutar el programa
     public static void main(String[] args) {
         Deck deck = new Deck();
-        // Mezclar el mazo al inicio
-        deck.shuffle();
-        
-        // Ejemplo: Mostrar la primera carta
-        deck.head();
-        
-        // Ejemplo: Seleccionar una carta al azar
-        deck.pick();
-        
-        // Ejemplo: Repartir una mano de cinco cartas
-        deck.hand();
+        int option;
+        do {
+            option = deck.showMenu();
+            switch (option) {
+                case 1:
+                    deck.shuffle();
+                    break;
+                case 2:
+                    deck.head();
+                    break;
+                case 3:
+                    deck.pick();
+                    break;
+                case 4:
+                    deck.hand();
+                    break;
+                case 0:
+                    System.out.println("Saliendo del programa...");
+                    break;
+                default:
+                    System.out.println("Opción no válida. Por favor selecciona una opción válida.");
+                    break;
+            }
+        } while (option != 0);
     }
 }
+
