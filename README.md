@@ -31,6 +31,13 @@ En esta actividad, se agregó un menú interactivo al programa Poker que permite
    - El menú presenta opciones numéricas que el usuario puede seleccionar para realizar diferentes acciones.
    - Después de que el usuario selecciona una opción, se ejecuta la operación correspondiente.
 
+2.1 **Codigo agregado**
+
+   ![Error](https://github.com/ELProtoV/Baraja/blob/main/C.png)
+
+
+
+
 3. **Manejo de Entrada de Usuario:**
    - Se utiliza la clase `Scanner` para obtener la entrada del usuario desde el teclado.
    - Si el usuario ingresa una opción válida, se ejecuta la operación correspondiente.
@@ -52,4 +59,9 @@ En esta actividad, se agregó un menú interactivo al programa Poker que permite
 
 
    ![Error](https://github.com/ELProtoV/Baraja/blob/main/a.png)
+
+4. **Funcionamiento codigo funcional**
+
+   ![Funcional](https://github.com/ELProtoV/Baraja/blob/main/b.png)
+
 
