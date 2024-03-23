@@ -47,3 +47,7 @@ En esta actividad, se agregó un menú interactivo al programa Poker que permite
    - El usuario puede seleccionar las opciones según sus necesidades.
    - Si se selecciona una opción válida, el programa realizará la operación correspondiente.
    - Si se selecciona una opción inválida, se muestra un mensaje de error y se vuelve a solicitar una opción válida.
+     
+3. **Funcionamiento de codigo con un herror**
+   ![Error](https://github.com/ELProtoV/Baraja/blob/main/a.png)
+
