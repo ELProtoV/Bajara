@@ -33,7 +33,7 @@ En esta actividad, se agregó un menú interactivo al programa Poker que permite
 
 2.1 **Codigo agregado**
 
-   ![Error](https://github.com/ELProtoV/Baraja/blob/main/C.png)
+   ![Error](https://github.com/ELProtoV/Baraja/blob/main/c.png)
 
 
 
