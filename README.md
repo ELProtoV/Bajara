@@ -90,13 +90,16 @@ En esta iteración del proyecto, se han realizado varias modificaciones importan
 
 ### Capturas de Pantalla:
 - **Menú Interactivo:**
-- 
+
+  
 ![interactivo](https://github.com/ELProtoV/Baraja/blob/main/d.png)
 
 - **Opción no Válida:**
+
   
 ![No valida](https://github.com/ELProtoV/Baraja/blob/main/e.png)
 
-
 - **Excepción por Agotamiento de Cartas:**
+
+  
 ![Agotammiento](https://github.com/ELProtoV/Baraja/blob/main/f.png)
