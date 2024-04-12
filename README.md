@@ -64,4 +64,34 @@ En esta actividad, se agregó un menú interactivo al programa Poker que permite
 
    ![Funcional](https://github.com/ELProtoV/Baraja/blob/main/b.png)
 
+# Reporte de Modificaciones en el Programa Poker
 
+En esta iteración del proyecto, se han realizado varias modificaciones importantes para mejorar la robustez y la usabilidad del programa Poker. A continuación, se detallan las principales modificaciones:
+
+### 1. Lanzamiento de Excepciones:
+- Se han agregado excepciones a los métodos `shuffle()`, `head()`, `pick()` y `hand()` en la clase `Deck`.
+- Estas excepciones se lanzan para indicar posibles condiciones excepcionales, como la selección de una opción no válida o si el mazo de cartas se queda sin cartas.
+
+### 2. Manejo de Excepciones:
+- Se han agregado bloques `try-catch` en el método `main()` para manejar las excepciones lanzadas en caso de seleccionar una opción no válida o si el mazo de cartas se queda sin cartas.
+- Esto garantiza que el programa pueda continuar ejecutándose y proporciona feedback al usuario en caso de errores.
+
+### 3. Excepción por Agotamiento de Cartas:
+- Se ha creado una excepción específica, `OutOfCardsException`, para el caso en que el mazo se quede sin cartas.
+- Esta excepción se lanza y maneja adecuadamente en los métodos correspondientes para informar al usuario sobre la situación.
+
+### Ejecución del Programa:
+- **Compilación y Ejecución:**
+   - El programa se compila utilizando el comando `javac Deck.java`.
+   - Se ejecuta desde la línea de comandos utilizando `java Deck`.
+- **Interacción con el Menú:**
+   - El usuario puede seleccionar las opciones del menú según sus necesidades.
+   - Las excepciones se manejan adecuadamente para proporcionar feedback al usuario en caso de errores.
+
+### Capturas de Pantalla:
+- **Menú Interactivo:**
+   [Captura de pantalla del menú interactivo]
+- **Opción no Válida:**
+   [Captura de pantalla de una opción no válida]
+- **Excepción por Agotamiento de Cartas:**
+   [Captura de pantalla de la excepción por agotamiento de cartas]
